@@ -7,7 +7,7 @@ country: United-States
 language: en
 latlng: 44.366245,-68.196586
 humandate: Apr 14-15, 2016
-humantime: 9:00 am - 4:30 pm
+humantime: 9:00 am - 4:00 pm
 startdate: 2016-04-14
 enddate: 2016-04-15
 instructor: ["Meeta Mistry", "Mary Piper"]
@@ -68,12 +68,6 @@ of the workshop learners should be able to more effectively manage and analyze
 data and be able to apply the tools and approaches directly to their ongoing research.
 </p>
 
-<!--
-  AUDIENCE
-
-  Explain who your audience is.  (In particular, tell readers if the
-  workshop is only open to people from a particular institution.
--->
 <p>
   <strong>Who:</strong>
   The workshop is open to researchers at all levels from the Jackson Laboratory and
@@ -82,17 +76,11 @@ data and be able to apply the tools and approaches directly to their ongoing res
   on-site (rather than remote) participation is required. 
 </p>
 
-<!--
-  LOCATION
-
-  This block displays the address and links to maps showing directions
-  if the latitude and longitude of the workshop have been set.  You
-  can use http://itouchmap.com/latlong.html to find the lat/long of an
-  address.
--->
 {% if page.latlng %}
 <p>
   <strong>Where:</strong>
+  We'll be in the Staff Conference Room opposite the LCC Auditorium at the 
+  Jackson Laboratory.
   {{page.address}}.
   Get directions with
   <a href="//www.openstreetmap.org/?mlat={{page.latlng | replace:',','&mlon='}}&zoom=16">OpenStreetMap</a>
@@ -101,11 +89,6 @@ data and be able to apply the tools and approaches directly to their ongoing res
 </p>
 {% endif %}
 
-<!--
-  SPECIAL REQUIREMENTS
-
-  Modify the block below if there are any special requirements.
--->
 <p>
   <strong>Requirements:</strong> Participants must bring a laptop with
 	specific software installed (listed
@@ -114,13 +97,6 @@ data and be able to apply the tools and approaches directly to their ongoing res
   <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
 </p>
 
-<!--
-  CONTACT EMAIL ADDRESS
-
-  Display the contact email address set in the header.  If an address
-  isn't set in the header, the Software Carpentry admin address is
-  used.
--->
 <p>
   <strong>Contact</strong>:
   Please mail
@@ -134,13 +110,6 @@ data and be able to apply the tools and approaches directly to their ongoing res
 
 <hr/>
 
-<!--
-  SCHEDULE
-
-  Show the workshop's schedule.  Edit the items and times in the table
-  to match your plans.  You may also want to change 'Day 1' and 'Day
-  2' to be actual dates or days of the week.
--->
 <h2> Schedule</h2>
 
 <div class="row">
@@ -180,18 +149,6 @@ data and be able to apply the tools and approaches directly to their ongoing res
  </div>
 </div>
 
-<!--
-  ETHERPAD
-
-  Display the Etherpad for the workshop.  You can set this up in
-  advance or on the first day; either way, make sure you push changes
-  to GitHub after you have its URL.  To create an Etherpad, go to
-
-      http://etherpad.mozilla.org/YYYY-MM-DD-site
-
-  where 'YYYY-MM-DD-site' is the identifier for your workshop (e.g.,
-  '2015-06-10-esu'.
--->
 {% if page.etherpad %}
 <p>
   <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
